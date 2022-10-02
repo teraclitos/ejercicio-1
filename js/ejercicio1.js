@@ -39,7 +39,7 @@ const numeroAleatorio = () => {
   );
   localStorage.setItem("idJugar", JSON.stringify({ id: 0 }));
   localStorage.setItem("idValor", JSON.stringify({ id: 1 }));
-  location.href = "http://127.0.0.1:5500/ejercicio.html";
+  location.href = "http://127.0.0.1:5500/ejercicio1.html";
 };
 
 const adivinar = () => {
@@ -53,7 +53,7 @@ const adivinar = () => {
     localStorage.setItem("idJugar", JSON.stringify({ id: 1 }));
     alert("Has adivinado");
 
-    location.href = "http://127.0.0.1:5500/ejercicio.html";
+    location.href = "http://127.0.0.1:5500/ejercicio1.html";
   } else if (valueNumber > 10 || valueNumber < 1) {
     alert("Debe ser un número del 1 al 10");
   } else if (valueNumber > localSTGNumero.numero) {
