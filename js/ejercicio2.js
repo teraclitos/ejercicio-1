@@ -29,7 +29,7 @@ const RenderLista = () => {
   lista.innerHTML = localSTGLista
     .map(
       (element) =>
-        `<li class="text-light d-flex mt-2"><p class="me-2"> ${element.tarea}</p><button onclick="eliminarTarea(${element.id})" style="width:1.5rem ;height:1.5rem"  type="button" class="btn btn-danger d-flex justify-content-center align-items-center p-0 m-0">x</button></li>`
+        `<li class="text-light d-flex mt-2"><div style="width:7rem ;"  class="me-2"><p > ${element.tarea}</p></div><button onclick="eliminarTarea(${element.id})" style="width:1.5rem ;height:1.5rem"  type="button" class="btn btn-danger d-flex justify-content-center align-items-center p-0 m-0">x</button></li>`
     )
     .join("");
 };
